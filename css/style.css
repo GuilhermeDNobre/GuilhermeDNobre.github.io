@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    height: 45px;
+    margin-left: 20vw;
+}
+
+header nav ul {
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+header nav ul li {
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+header a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: wheat;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 7px 5px;
+    transition: transform 400ms, box-shadow 400ms;
+}
+
+button:active {
+    box-shadow: 2px 3px 1px;
+    transform: translate(4px, 6px);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media screen and (min-width: 400px){}
+.menu_esquerda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 1200px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu_esquerda {
+    background-color: antiquewhite;
+}
+
+.button_esquerda{
+    width: 15vw;
+    align-self: center;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.conteudo {
+    margin-left: 21vw;
+    margin-top: 93px;
+    width: 80vw;
+    height: 1200px;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+article section{
+    padding: 10px;
+}
+
+.loader { /* seleciona a classe na qual terá seu css modificado */
+    width: 48px; /* define largura */ 
+    height: 48px; /* define altura */
+    border: 5px solid; /* define uma borda para o elemento */
+    border-color: #FF3D00 transparent; /* define uma cor para borda e ela possue a propriedade transparente*/
+    border-radius: 50%; /* define um arredondamento dos cantos da borda */
+    display: inline-block; /* define o display para inline-bloc, cuja propriedade é o elemento poder estar ao lado de outros elementos, visto que não adicionará uma quebra de linha ao final do elemento e também possui altura e largura respeitadas de acordo com as definições de height e width*/
+    box-sizing: border-box; /* define o modelo no qual a altura e largura total do elemento será calculada*/
+    animation: rotation 1s linear infinite; /* cria uma animação do tipo rotação na qual é linear e infinita */
+  }
+  
+  @keyframes rotation {   /* é uma propriedade que define a animação pois ela trata o início e o fim da animação e todos os pontos entre esses*/
+    0% {  /* início da animação*/
+      transform: rotate(0deg);  /* permite modificar o elemento, no caso estará usando o rotate*/
+    }
+    100% {  /* final da animação */
+      transform: rotate(360deg);  /* define que ao final da animação terá rotacionado 360º */
+    }
+  } 
